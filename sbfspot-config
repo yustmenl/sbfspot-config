@@ -519,7 +519,7 @@ get_releases()
 
 is_pi()
 {
-	grep -q "^model name\\s*:\\s*ARMv" /proc/cpuinfo
+	grep -q "Raspberry" /proc/cpuinfo
 	return $?
 }
 
